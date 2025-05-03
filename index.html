@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ra.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <h1>روان هاني محمد</h1>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:rh20232289@sva.edu.eg">rh20232289@sva.edu.eg</a></p>
+            <p><i class="fas fa-phone"></i> +201155361700</p>
+            <p><i class="fas fa-birthday-cake"></i> تاريخ الميلاد: 22/5/2005</p>
+            <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/?api=1&query=القناطر+الخيرية">الموقع: القناطر الخيرية/ القاليوبيه</a></p>
+        </header>
+        <section class="education">
+            <h2><i class="fas fa-graduation-cap"></i> التعليم</h2>
+            <p><strong>اسم المعهد:</strong> الوادي العالي لنظم معلومات</p>
+            <p>تاريخ التخرج المتوقع: 2027</p>
+        </section>
+        <section class="skills">
+            <h2><i class="fas fa-lightbulb"></i> المهارات</h2>
+            <ul class="skills-list">
+                <li>مبرمج<div class="skill-level"><div class="skill-level-bar" data-level="70"></div></div></li>
+                <li>Microsoft Office<div class="skill-level"><div class="skill-level-bar" data-level="80"></div></div></li>
+                <li>اللغة الإنجليزية: متوسط<div class="skill-level"><div class="skill-level-bar" data-level="50"></div></div></li>
+                <li>اللغة العربية: ممتاز<div class="skill-level"><div class="skill-level-bar" data-level="90"></div></div></li>
+                <li>فهم واستيعاب سريع<div class="skill-level"><div class="skill-level-bar" data-level="85"></div></div></li>
+                <li>القدرة على التكيف السريع مع الأوضاع المختلفة<div class="skill-level"><div class="skill-level-bar" data-level="75"></div></div></li>
+            </ul>
+        </section>
+        <section class="additional-info">
+            <h2><i class="fas fa-info-circle"></i> معلومات إضافية</h2>
+            <p>كود الطالب: 20232289</p>
+            <p>الجروب: ه</p>
+        </section>
+        <section class="interests">
+            <h2><i class="fas fa-heart"></i> الاهتمامات</h2>
+            <ul>
+                <li>المغامرة</li>
+                <li>التعلم</li>
+                <li>الفضول</li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        const skillBars = document.querySelectorAll('.skill-level-bar');
+        skillBars.forEach(bar => {
+            const level = bar.dataset.level;
+            bar.style.width = `${level}%`;
+        });
+    </script>
+</body>
+</html>
